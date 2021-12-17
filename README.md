@@ -1,2 +1,2 @@
 # rsschool-cv
-RSS CV Task
+https://dsh91698.github.io/rsschool-cv/cv
