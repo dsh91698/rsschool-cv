@@ -7,50 +7,138 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" section="IE=edge">
+    <title>CV - curriculum vitae</title>
+    <meta name="description" section="">
+    <meta name="viewport" section="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/svg/_surrok_favicon.ico">
+
+    <!-- code highlighter START-->
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/agate.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <!-- <script src="/path/to/highlight.min.js"></script> -->
+    <script>hljs.highlightAll();</script>
+    <!-- code highlighter END -->
+
 </head>
 
 <body>
-    <div class='container'>
-        <!--[if lt IE 7]>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. 
                 Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-            <div class='header'> 
-                <h1>CV</h1> 
+    <header class='header'>
+        <div class="container flexbox">
+
+            <ul class="navigation-menu">
+                <li class="navigation-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="navigation-item"><a href="#profile" class="nav-link">About Me</a></li>
+                <li class="navigation-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="navigation-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="navigation-item"><a href="#code" class="nav-link">Code Sample</a></li>
+                <li class="navigation-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="navigation-item"><a href="#lang" class="nav-link">Languages</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class='main'>
+        <div class="container flexbox">
+
+
+            <div class="section" id="profile">
+                <div class="userpic">
+                    <img class="img-userpic" src="./assets/img/_surrok_square.jpg" alt="Student photo">
+                </div>
+
+                <h1 class="section-title"> Dimitrii Shabanov</h1>
+                <h2 class="section-title"> Junior Frontend Developer </h2>
             </div>
-        </header>
 
-        <main>
-            <div class='content'>
-                <h2>About me</h2>
+
+            <div class='section' id="about">
+                <h2 class="section-title">About me</h2>
+                <p> Motivated non-certified Javascript wannaby developer and in future professional scrum master 
+                    with (a lot of in future) years of experience. Inclined to bring effectiveness to any front-end development. 
+                    Driven by passion and innovation, will design and introduce many new features to the projects. 
+                    Highly skilled in JS and Python coding and scripting, React & Flask framework (but not right now), and team communication.</p>
             </div>
 
-            <div class='content'>
-                <h2>Skills</h2>
+            <div class='section' id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>Basic JS</li>
+                    <li>Basic HTML & CSS</li>
+                    <li>Basic Python</li>
+                    <li>Basic QGIS</li>
+                    <li>Photoshop & Lightroom</li>
+                    <li>DaVinci basic colorgrading</li>
+                </ul>
             </div>
 
-            <div class='content'>
-                <h2>Education</h2>
+            <div class='section' id="education">
+                <h2 class="section-title">Education</h2>
+                <ul>
+                    <li>Astrakhan State University</li>
+                </ul>
             </div>
 
-            <div class='content'>
-                <h2>Projects</h2>
+            <div class='section' id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul>
+                    <li> <a href="https://github.com/dsh91698/rsschool-cv/tree/rsschool-cv-html">CV Rolling Scopes School</a></li>
+                </ul>
+            </div>
+
+            <div class='section' id="code">
+                <h2 class="section-title">Code Sample</h2>
+                <pre>
+            <code>
+                function greet() {
+                    return "hello world!";
+                    }
+            </code>
+            </pre>
+            </div>
+
+            <div class='section' id="lang">
+                <h2 class="section-title">Languages</h2>
+                <ul>
+                    <li>Russian - native;</li>
+                    <li>English - B1-B2: Intermediate/Upper-intermediate (according to the online test at EFset)</li>
+                    <li ><img class="img-eng-result" src="./assets/img/score_82_b374187e5778.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class='section' id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul>
+                    <li>Phone: +7(917)1813419</li>
+                    <li>E-mail: mettus75@gmail.com</li>
+                    <li>Discord: </li>
+                    <li class="link"><a  href="https://t.me/dsh916"> Telegram me</a></li>
+                </ul>
             </div>
 
 
 
-        </main>
-        <aside> </aside>
-        <footer> </footer>
+        </div>
+    </main>
+    <aside> </aside>
 
-    </div>
+    <footer class="footer">
+        <div class="container flexbox">
+
+            <div class="img"><img src="./assets/svg/rs_school_js.svg" alt="RSS Logo"> </div>
+            <div class="link"> <a class="link" href="https://rs.school/js/">Javascript Course - Rolling Scopes</a></div>
+            <div class="link"> <a class="link" href="https://github.com/dsh91698">GitHub</a></div>
+
+        </div>
+    </footer>
+
     <script src="script.js" async defer></script>
 </body>
 
