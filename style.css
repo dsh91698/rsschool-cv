@@ -17,7 +17,7 @@
 
 html {
     scroll-behavior: smooth; 
-    color: var(--purple);
+    /* color: var(--purple); */
   }
 
 .flexbox {
@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    background: var(--grey);
+    background: var(--green-sky);
     /* text-align: center; */
     min-height: 100vh;
     margin: 0;
@@ -72,7 +72,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    color: var(--green);
 }
 
 .img {
@@ -80,7 +79,6 @@ body {
     /* background: rgb(62, 28, 185); */
     border-radius: 3px;
     margin: 5px;
-    /* Adds space between items */
 }
 
 .userpic {
@@ -100,6 +98,8 @@ body {
     /* background: blue-c; */
     border-radius: 3px;
     margin: 5px;
+    color: var(--green);
+
     /* Adds space between items */
 
 }
@@ -132,8 +132,8 @@ body {
     color: var(--green);
   }
 
-  a:hover {
-    background-color: var(--blue-c);
+  .nav-link:hover {
+    /* background-color: var(--blue-c); */
     color: var(--crimson);
   }
 
